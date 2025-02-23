@@ -1,11 +1,172 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thu Le - Resume</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <h1>Thu Le</h1>
-    <p>Hello</p>
+
+<body>   
+    <nav class="sidebar">
+        <img src="images/pfp.png" alt="PDF Preview" width="200">
+        <div class="logo">
+            <h1>THU LE</h1>
+        </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="turtlebar">
+        <img id="turtle" src="images/turtle.png" alt="Walking Turtle" class="turtle" width="50">  
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p><a href="mailto:lethu@stanford.edu">lethu@stanford.edu</a> ⋄ 
+                <a href="https://www.linkedin.com/in/thu-le-1870001a4/" target="_blank">LinkedIn</a>
+            </p>
+            <p>CS @ Stanford University | Jack Kent Cooke Scholar</p>
+            <p>Four years experience working in machine learning and software engineering. 
+                I have previously worked with startups, research labs, and non-profits.
+            </p>
+            <p>
+                I like to build things that solve real problems and make the world a cooler place. 
+                I'm originally from Dallas, Texas, and I am now based in the Bay Area in California.
+                In my free time, I like talking to my friends and lifting weights.
+            </p>
+            <p>
+                Fun facts:
+                <ul>
+                    <li>I collect Tong Sui pudding jars (count: 11)</li>
+                    <li>My calculus teacher's name was Mr. Newton (related to the Isaac Newton!)</li>
+                    <li>Mint tea and Mint Chocolate Chip ice cream <3 </li>
+                    <li>I like turtles</li>
+                    
+                </ul>
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>design and development of an app with react native</h3>
+            <p> Superbloom is a project I worked on with a team as part of CS 147 and CS 147L at Stanford
+                university. Over the course of 11 weeks, we designed and developed a mental health app 
+                to support users in healing from the loss of loved ones. We iterated over an entire
+                design process, with needfinding, interviewing, prototyping, heuristic evaluations, and 
+                low, medium, and high-fidelity prototyping. 
+            </p>
+
+            <p>
+                At the <a href="files/19-project-expo.pdf" target="_blank">CS 147 Project Expo</a>
+                , across 29 teams, we won:
+                <ul>
+                    <li>1st Best Visual Design</li>
+                    <li>1st Greatest Personal Impact</li>
+                    <li>1st Best Music for Concept Video</li>
+                    <li>2nd Best Poster</li>
+                    <li>3rd Most Novel Product</li>
+                </ul>
+            </p>
+            <p>
+                You can read more about our development process
+                <a href="https://web.stanford.edu/class/cs147/projects/Technology-for-Mental-Health/superbloom/" target="_blank">here</a>.
+                Our concept video can be found <a href="https://youtu.be/yIhh42q7hfA?si=N3ZycaZJcnwM5g2X" target="_blank">here</a>.
+            </p>
+            <img src="images/CS147Poster.png" alt="PDF Preview" width="800">
+            
+            <div style="margin: 20px 0;"></div>
+
+            <h3>ethics review tool</h3>
+            <p> As an intern at Stanford's CURIS program, I developed a tool for streamlining research grant feedback, 
+                for the 2024 review process for HAI seed grants. I used Python, Jupyter Notebook, OpenAI API, Llama 3.1, and Google Cloud Platform.
+            </p>
+            <img src="images/CURIS Poster.png" alt="PDF Preview" width="800">
+
+            <h3>misinformation classification model</h3>
+            <p> Class project for CS 224N: Natural Language Processing with Deep Learning. We developed a model to classify misinformation in news articles. 
+                We used a RoBERTa model, OpenAI API, and Backpack LM.
+            </p>
+            <img src="images/224n prjct (1).jpg" alt="PDF Preview" width="800">  
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Computer Science, Stanford University</strong> · Jack Kent Cooke Scholar · June 2026</p>
+            <p><strong>Coursework:</strong> Data Structures & Algorithms, Operating Systems, iOS/Android App Development, UI/UX Design, 
+                Product Management, Game Design, Social Computing, Machine Learning, Computer Vision, Natural Language Processing, 
+                Reinforcement Learning, Deep RL, Networks & Security, Software Engineering Lab, HCI Research</p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+
+            <h3>AI Instructor</h3>
+            <p><strong>Inspirit AI</strong> · Feb 2025 - Present</p>
+            <ul>
+                <li>Teaching Python and AI concepts to Bay Area students</li>
+                
+            </ul>
+
+            <h3>Machine Learning Engineer</h3>
+            <p><strong>Conscious Digital Italy</strong> · Feb 2024 - Feb 2025</p>
+            <ul>
+                <li>Developed an LLM for classifying data deletion and access request response statuses to automate privacy law compliance.</li>
+                <li>Deployed real-time inference for thousands of data deletion and access requests using AWS.</li>
+            </ul>
+
+            <h3>Software Engineering Intern</h3>
+            <p><strong>Stanford Human-Centered Artificial Intelligence</strong> · June 2024 - September 2024</p>
+            <ul>
+                <li>Developed a tool for streamlining research grant feedback using Python, Jupyter Notebook, OpenAI API, Llama 3.1, and GCP.</li>
+                <li>Automated the 2024 review process for HAI seed grants, significantly improving processing efficiency.</li>
+            </ul>
+
+            <h3>Computer Vision Intern</h3>
+            <p><strong>Stanford University School of Medicine, Cardiac Magnetic Resonance Lab</strong> · April 2023 - September 2024</p>
+            <ul>
+                <li>Developed Mask R-CNN to crop cardiac diffusion tensor images (cDTI) for segmentation.</li>
+                <li>Built a U-Net neural network using PyTorch to segment MRI heart scans, later refining it with a fine-tuned nnU-Net.</li>
+            </ul>
+
+            <h3>Machine Learning Intern</h3>
+            <p><strong>UT Southwestern Medical Center</strong> · June 2021 - Aug 2022</p>
+            <ul>
+                <li>Developed a CNN using TensorFlow to detect malpositioned catheters in radiographs with 97.3% accuracy.</li>
+                <li>Built a BERT model for text classification of hospital narratives for intubations with 98.0% accuracy.</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>Hannum, A., Le, T., Cork, T., & Ennis, D. Deep Learning Automated Segmentation of the Left Ventricle for Spin-Echo Cardiac Diffusion Tensor Imaging (cDTI). <em>ISMRM 2024.</em></li>
+                <li>Stocker, S., Hannum, A., Le, T., Cork, T., Ennis, D. Automated Segmentation and Annotation of Cardiac Diffusion Tensor Images. <em>ISMRM 2025.</em></li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Mental Health App</strong> – iOS/Android app in React Native and JavaScript to support users in healing from the loss of loved ones. <a href="https://web.stanford.edu/class/cs147/projects/Technology-for-Mental-Health/superbloom/" target="_blank">View project</a></li>
+                <li><strong>Content Abuse Detection</strong> – Trust and safety content moderation pipeline with report handling and text/image analysis using the Perspective API and a Vision Transformer (ViT) in Python.</li>
+                <li><strong>Fake News Detection</strong> – Text classification with an ensemble approach using RoBERTa, Open AI, and Backpack LM.</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p><strong>Languages & Frameworks:</strong> C++, Python, C, Java, HTML, CSS, JavaScript, React, React Native</p>
+            <p><strong>Tools & Platforms:</strong> Pandas, Numpy, PyTorch, TensorFlow, Keras, MongoDB, Firebase, GCP, AWS</p>
+        </section>
+    </div>
+
+    <script src="turtle.js"></script>
 </body>
 </html>
