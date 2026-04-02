@@ -1,274 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thu Le</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #222;
-            background-color: #fafafa;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-        header {
-            text-align: center;
-            padding: 60px 20px 30px;
-        }
-
-        header img {
-            width: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            font-size: 1.8em;
-            font-weight: 600;
-            margin: 0;
-        }
-
-        header p {
-            margin-top: 6px;
-            color: #555;
-        }
-
-        nav {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            max-width: 750px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        section {
-            margin-bottom: 60px;
-        }
-
-        h2 {
-            font-size: 1.4em;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 4px;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            font-size: 1.1em;
-            margin-top: 25px;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            margin: 6px 0;
-        }
-
-        a {
-            color: #0077cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin: 10px 0 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            color: #777;
-            font-size: 0.9em;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <img src="images/pfp.png" alt="Thu Le">
-        <h1>Thu Le</h1>
-        <p>
-            <a href="mailto:lethu@stanford.edu">lethu@stanford.edu</a> · 
-            <a href="https://www.linkedin.com/in/thu-le-1870001a4/" target="_blank">LinkedIn</a>
-        </p>
-        <p>CS @ Stanford University · Jack Kent Cooke Scholar</p>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="brand">Thu Le</a>
+        <div class="nav-links">
+          <a href="blog/index.html">Blog</a> 
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="cv.pdf">CV</a>
+        </div>
+      </nav>
     </header>
 
-    <nav>
-        <a href="#about">About</a> · 
-        <a href="#projects">Projects</a> · 
-        <a href="#experience">Experience</a> · 
-        <a href="#education">Education</a> · 
-        <a href="#publications">Publications</a> · 
-        <a href="#skills">Skills</a>
-    </nav>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
+    <main class="content">
+      <section class="intro">
+        <div class="intro-text">
+            <h1> Thu Le </h1>
             <p>
-                I’m an undergraduate researcher and engineer at Stanford University with four years of experience in machine learning and software development. 
-                I’ve worked with startups, research labs, and non-profits, focusing on projects that make the world more understandable and connected.
+            I am an incoming machine learning engineer at TikTok. 
+            I'm originally from Dallas, TX, and I am currently based in the Bay Area.
+            </p>
+
+            <p>
+            I previously worked at Inspirit AI as an instructor to teach coding and AI concepts to middle
+            and high school students. I also have experience doing research with several institutions, such 
+            as Stanford (CURIS, RSL) and UT Southwestern (STARS). 
+            </p>
+
+            <p>
+                I am graduating from Stanford in June 2026 with both a B.S. in Computer Science with a specialization in 
+                Human-Computer Interaction and a M.S. in Computer Science with
+                a specialization in artificial intelligence.  
             </p>
             <p>
-                Originally from Dallas, Texas, I now live in the Bay Area. In my free time, I enjoy spending time with friends and lifting weights.
+                I was a Jack Kent Cooke undergrduate scholar. I graduated from the School of Science and Engineering, Dallas TX. 
             </p>
-            <p><strong>Fun facts:</strong></p>
-            <ul>
-                <li>My calculus teacher’s name was Mr. Newton (a distant relative of Isaac Newton!)</li>
-                <li>I like anything mint</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <h3>Big Cheese </h3>
-            <p>
-                Senior capstone project. Worked on mulitplayer LAN game about mice trying to eat and survive traps and cats.
+            <p class="links">
+            <a href="https://github.com/">GitHub</a> ·
+            <a href="https://www.linkedin.com/">LinkedIn</a> ·
+            <a href="mailto:email@domain.com">Email</a>
             </p>
-            <iframe>
-                width = "560"
-                height = "315"
-                src = "https://www.youtube.com/watch?v=PuHX3tYna-g"
-                title = "Player Demo"
-                frameborder = "0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <h3>Superbloom: Mental Health App</h3>
-            <p>
-                Designed and developed a mobile app for users healing from loss as part of Stanford’s CS 147/147L courses. 
-                The app guides users through journaling, mindfulness, and community support tools.
-            </p>
-            <p>
-                Recognized at the <a href="files/19-project-expo.pdf" target="_blank">CS 147 Project Expo</a>:
-            </p>
-            <ul>
-                <li>1st – Best Visual Design</li>
-                <li>1st – Greatest Personal Impact</li>
-                <li>1st – Best Music for Concept Video</li>
-                <li>2nd – Best Poster</li>
-                <li>3rd – Most Novel Product</li>
-            </ul>
-            <p>
-                <a href="https://web.stanford.edu/class/cs147/projects/Technology-for-Mental-Health/superbloom/" target="_blank">Read about the process</a> · 
-                <a href="https://youtu.be/yIhh42q7hfA?si=N3ZycaZJcnwM5g2X" target="_blank">Watch concept video</a>
-            </p>
-            <img src="images/CS147Poster.png" alt="Superbloom Poster">
+        </div>
 
-            <h3>Source Separation Model (CS 229)</h3>
-            <p>
-                Built a bird call source separation model using Mixture Invariant Training and prototypical networks for improved disentanglement of overlapping signals.
-            </p>
-            <img src="images/cs229 poster.png" alt="CS229 Poster">
+        <div class="intro-photo">
+            <img src="images/me.jpeg" alt="Photo of Thu Le">
+        </div>
+      </section>
 
-            <h3>Ethics Review Tool</h3>
-            <p>
-                Developed a research feedback tool for Stanford’s HAI seed grant review process using Python, Jupyter, OpenAI API, Llama 3.1, and Google Cloud.
-            </p>
-            <img src="images/CURIS Poster.png" alt="CURIS Poster">
+      <section>
+        <h3>Check out my latest thoughts and updates on my blog:</h3>
+        <p>
+          <strong>Project Title</strong><br>
+          Short one-line description of what you did.
+        </p>
 
-            <h3>Misinformation Classification (CS 224N)</h3>
-            <p>
-                Built a misinformation classifier using RoBERTa, Backpack LM, and OpenAI’s API as part of CS 224N. Evaluated performance on news datasets.
-            </p>
-            <img src="images/224n prjct (1).jpg" alt="CS224N Project">
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>M.S. Computer Science, Stanford University</strong> · Expected June 2026</p>
-            <p><strong>B.S. Computer Science, Stanford University</strong> · Expected June 2026</p>
-            <p>Jack Kent Cooke Undergraduate, Graduate Scholar</p>
-            <p><strong>Selected Coursework:</strong></p>
-            <ul>
-                <li>CS 224N – NLP with Deep Learning</li>
-                <li>CS 231N – Computer Vision</li>
-                <li>CS 229 – Machine Learning</li>
-                <li>CS 205L – Continuous Math Methods for ML</li>
-                <li>CS 147/147L – Human-Computer Interaction Design</li>
-                <li>CS 161 – Algorithms</li>
-                <li>CS 111 – Operating Systems</li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-
-            <h3>AI Instructor · Inspirit AI</h3>
-            <p>Feb 2025 – Present</p>
-            <ul>
-                <li>Teaching Python and AI fundamentals to Bay Area high school students.</li>
-            </ul>
-
-            <h3>Machine Learning Engineer · Conscious Digital Italy</h3>
-            <p>Feb 2024 – Feb 2025</p>
-            <ul>
-                <li>Developed an LLM pipeline to automate privacy law compliance across thousands of user data requests.</li>
-            </ul>
-
-            <h3>Software Engineering Intern · Stanford HAI</h3>
-            <p>June 2024 – Sept 2024</p>
-            <ul>
-                <li>Developed a feedback review tool using OpenAI API and GCP, optimizing internal research grant workflows.</li>
-            </ul>
-
-            <h3>Computer Vision Intern · Stanford School of Medicine</h3>
-            <p>Apr 2023 – Sept 2024</p>
-            <ul>
-                <li>Developed Mask R-CNN and U-Net architectures for cardiac MRI segmentation.</li>
-            </ul>
-
-            <h3>Machine Learning Intern · UT Southwestern Medical Center</h3>
-            <p>June 2021 – Aug 2022</p>
-            <ul>
-                <li>Built CNNs for catheter detection and BERT models for text classification of clinical narratives.</li>
-            </ul>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            <ul>
-                <li>Hannum, A., Le, T., Cork, T., & Ennis, D. (2024). <em>Deep Learning Automated Segmentation of the Left Ventricle for Spin-Echo Cardiac Diffusion Tensor Imaging (cDTI).</em> ISMRM 2024.</li>
-                <li>Stocker, S., Hannum, A., Le, T., Cork, T., & Ennis, D. (2025). <em>Automated Segmentation and Annotation of Cardiac Diffusion Tensor Images.</em> ISMRM 2025.</li>
-            </ul>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <p><strong>Languages & Frameworks:</strong> C++, Python, C, Java, JavaScript, React, React Native, HTML/CSS</p>
-            <p><strong>Tools & Platforms:</strong> PyTorch, TensorFlow, Pandas, NumPy, Firebase, MongoDB, GCP, AWS</p>
-        </section>
+        <p>
+          <strong>Another Project</strong><br>
+          Short one-line description of what you did.
+        </p>
+      </section>
     </main>
 
-    <footer>
-        <p>© 2025 Thu Le</p>
+    <footer class="site-footer">
+      <p>© 2025 Thu Le</p>
     </footer>
-</body>
+  </body>
 </html>

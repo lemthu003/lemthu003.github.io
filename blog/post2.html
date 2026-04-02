@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluating Generative Models | Thu Le</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="../index.html" class="brand">Thu Le</a>
+      <div class="nav-links">
+        <a href="../projects.html">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="index.html">Blog</a>
+        <a href="../cv.pdf">CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content">
+    <a href="index.html" class="brand"> < Back</a>
+
+    <article class="blog-post">
+      <h1>TikTok Machine Learning Engineer Recruiting Process + Experience</h1>
+      <p><em>December 2025</em></p>
+
+    <p>
+        Hi
+    </p>
+
+    <h3>Application</h3>
+
+    <h3>Phone Screen</h3>
+
+    <h3>First Technical</h3>
+    <p>
+        LC Medium + ML Design
+    </p>
+
+    <p>
+        The first leetcode problem was quite simple. There is a list of interaction pairs, that follow a format:
+    </p>
+    <p>
+        ["User A", "User B", "Likes"] -> User A likes User B
+    </p>
+    <p>
+        Return the count of mutual interaction pairs. That is, if A interacts with B AND B interacts with A, then
+        A-B is a pair. Note that A-B and B-A are the same pair and are not counted as two distinct pairs.
+    </p>
+
+    <p>
+        <b>Thoughts:</b> Note that the action itself doesn't really matter. We just want to count A->B and B->A. 
+    </p>
+    <p>
+        <b> Solution:</b> Let there be a s = set() and a ret = 0. 
+        Iterate through all interactions. For every A interact B, if (A, B) not in s, s.add((A,B)). Check if (B, A) is in s. If so, 
+        increment ret by 1. We should be able to count all unique mutual interaction pairs. Return ret, the count of such pairs. 
+    </p>
+    <h3>Second Technical</h3>
+    <p>
+        LC Hard
+    </p>
+
+    <p></p>
+    <h3>Third Technical</h3>
+    <p>
+        Logistic Regression + ML Concepts
+    </p>
+    <h3>Fourth Technical</h3>
+    <p>
+        Resume Deep Dive + Algorithms Question + Behaviorial
+    </p>
+    <h3>HR Interview</h3>
+
+    <h3>Offer Call</h3>
+
+      
+    <!-- Disqus Comments -->
+    <section id="comments">
+      <h2>Comments</h2>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;       
+          this.page.identifier = "post2"; // Unique ID per post
+        };
+        (function() { 
+          var d = document, s = d.createElement('script');
+          s.src = 'https://lemthu003.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>
+        Please enable JavaScript to view the 
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Thu Le</p>
+  </footer>
+</body>
+</html>
